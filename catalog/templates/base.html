@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Приют домашних животных</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body style="background:black">
+{% load static %}
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Приют животных</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/dogs">Собаки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cats">Кошки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/parrots">Попугай</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacts">Контакты</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/admin">Админка</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
